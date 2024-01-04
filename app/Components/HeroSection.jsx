@@ -2,11 +2,13 @@
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
+import { useState } from 'react'
 
 
 
 
 const HeroSection = () => {
+  const [link, setLink] = useState("");
   return (
   <section>
     <div className='grid grid-cols-1 lg:grid-cols-12'>
@@ -19,10 +21,9 @@ const HeroSection = () => {
         sequence={[
             'Abhi',
             1000,
-            'web Developer',
+            'Full-Stack Web Developer',
             1000,
-            'UI/UX Developer',
-            1000,
+            
             
         ]}
         wrapper='span'
@@ -37,7 +38,8 @@ const HeroSection = () => {
        </p>
        <div>
         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-900 to-pink-800 hover:bg-slate-200 text-white'>Hire me</button>
-        <button className='px-1 py-1  w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-slate-800 bg-gradient-to-br from-blue-500 via-purple-900 to-pink-800 text-white text-white  mt-3'>
+        <button className='px-1 py-1  w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-slate-800 bg-gradient-to-br from-blue-500 via-purple-900 to-pink-800  text-white  mt-3'
+        >
            <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-3'>
            Download CV
            </span>
@@ -47,7 +49,7 @@ const HeroSection = () => {
     <div className="col-span-5 place-self-center mt-4 lg:mt-0">
       <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
       <Image 
-        src="/images/abhi1.png"
+        src="/images/boy.png"
         alt='hero image'
         className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
         width={300}

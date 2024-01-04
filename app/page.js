@@ -3,6 +3,7 @@ import HeroSection from './Components/HeroSection'
 import NavBar from './Components/NavBar'
 import AboutSection from './Components/AboutSection'
 import SkillSection from './Components/SkillSection'
+import Footer from './Components/Footer'
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <SkillSection />
+  
+      <Footer />
       </div>
     </main>
   )
